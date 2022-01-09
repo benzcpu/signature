@@ -6,10 +6,18 @@
 <body>
  
 <canvas id="myPics" width="560" height="360"></canvas>
+<button onclick="save_image()"> save </button>
+<img src="">
 </body>
-<script src="main.js">
 <script>
+function save_image(){
+ var canvas = document.getElementById("myPics");
+var img    = canvas.toDataURL("image/png");
+document.write('<img src="'+img+'"/>');
+}
 
- 
+
 </script>
+<script src="main.js"></script>
+
 </html>
